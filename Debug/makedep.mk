@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+ADF7024.c
+
 atmel_start.c
 
 Device_Startup\startup_saml11e16a.c
@@ -24,8 +26,6 @@ hal\src\hal_ext_irq.c
 
 hal\src\hal_gpio.c
 
-hal\src\hal_i2c_m_sync.c
-
 hal\src\hal_init.c
 
 hal\src\hal_io.c
@@ -39,6 +39,8 @@ hal\src\hal_spi_m_sync.c
 hal\src\hal_timer.c
 
 hal\src\hal_usart_sync.c
+
+hal\src\hal_wdt.c
 
 hal\utils\src\utils_assert.c
 
@@ -60,7 +62,7 @@ hpl\dmac\hpl_dmac.c
 
 hpl\eic\hpl_eic.c
 
-hpl\gclk\evsys\hpl_evsys.c
+hpl\evsys\hpl_evsys.c
 
 hpl\gclk\hpl_gclk.c
 
@@ -80,7 +82,11 @@ hpl\tc\hpl_tc.c
 
 hpl\trng\hpl_trng.c
 
+hpl\wdt\hpl_wdt.c
+
 main.c
+
+saml11.c
 
 trustzone\trustzone_manager.c
 

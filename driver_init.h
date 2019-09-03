@@ -32,9 +32,9 @@ extern "C" {
 #include <rtc_lite.h>
 #include <hal_spi_m_sync.h>
 
-#include <hal_i2c_m_sync.h>
-
 #include <hal_usart_sync.h>
+
+#include <hal_wdt.h>
 
 #include <hal_evsys.h>
 #include <hal_ext_irq.h>
@@ -45,9 +45,9 @@ extern struct rand_sync_desc        RAND_0;
 extern struct timer_descriptor      TIMER_0;
 extern struct spi_m_sync_descriptor SPI_0;
 
-extern struct i2c_m_sync_desc I2C_0;
-
 extern struct usart_sync_descriptor USART_0;
+
+extern struct wdt_descriptor WDT_0;
 
 void ADC_0_init(void);
 
@@ -61,13 +61,12 @@ void SPI_0_PORT_init(void);
 void SPI_0_CLOCK_init(void);
 void SPI_0_init(void);
 
-void I2C_0_CLOCK_init(void);
-void I2C_0_init(void);
-void I2C_0_PORT_init(void);
-
 void USART_0_PORT_init(void);
 void USART_0_CLOCK_init(void);
 void USART_0_init(void);
+
+void WDT_0_CLOCK_init(void);
+void WDT_0_init(void);
 
 /**
  * \brief Perform system initialization, initialize pins and clocks for

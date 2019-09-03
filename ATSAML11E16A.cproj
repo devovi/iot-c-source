@@ -55,12 +55,12 @@
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_evsys.h" IsConfig="false" Hash="jT0K+r4kwAM8NXNsajf8mA" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_ext_irq.h" IsConfig="false" Hash="sm9cN3GPkLctaX5iRw7wzw" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_gpio.h" IsConfig="false" Hash="3mBEQ9Ix28YOArddDes83Q" />
-          <AcmeProjectActionInfo Action="File" Source="hal/include/hal_i2c_m_sync.h" IsConfig="false" Hash="wYjgBbVVd/11drj/bh4EaQ" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_init.h" IsConfig="false" Hash="OrYSVpF3YA5XrOBImWpdSg" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_io.h" IsConfig="false" Hash="XZRSabc39WU/0MFBLYGLvQ" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_rand_sync.h" IsConfig="false" Hash="r1kDO2AS88lqvBd82eYgCw" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_sleep.h" IsConfig="false" Hash="KuZDwgrLdU+fuMG82ZFTqg" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_spi_m_sync.h" IsConfig="false" Hash="2oma6hRMCcowUy2wVveqMg" />
+          <AcmeProjectActionInfo Action="File" Source="hal/include/hal_wdt.h" IsConfig="false" Hash="K9VDtDsc19dB+eR0olpSjg" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hpl_adc_dma.h" IsConfig="false" Hash="ZNWJ5APLfPqPLqI7LDqlMA" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hpl_core.h" IsConfig="false" Hash="XeEtUlBSwXUmLA41hFYYWg" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hpl_delay.h" IsConfig="false" Hash="3tgjyGPrs0ePCewpMUQPbQ" />
@@ -81,15 +81,16 @@
           <AcmeProjectActionInfo Action="File" Source="hal/include/hpl_spi_dma.h" IsConfig="false" Hash="y9HmqskArpKzCF7kgcY+IQ" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hpl_spi_sync.h" IsConfig="false" Hash="Qr5slVYsVsngWiAyjLwx8A" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hpl_usart.h" IsConfig="false" Hash="gkIcItnlv0v8NvwxEz9neA" />
+          <AcmeProjectActionInfo Action="File" Source="hal/include/hpl_wdt.h" IsConfig="false" Hash="J2BXxJGoxlx3Bi9pfKE/Cw" />
           <AcmeProjectActionInfo Action="File" Source="hal/src/hal_atomic.c" IsConfig="false" Hash="jOsfB5ZnunjCPnUQXuXi9g" />
           <AcmeProjectActionInfo Action="File" Source="hal/src/hal_delay.c" IsConfig="false" Hash="vZ+YYOpHjTcAZaAaTE3Izg" />
           <AcmeProjectActionInfo Action="File" Source="hal/src/hal_evsys.c" IsConfig="false" Hash="lNdxWuQaRyRL4TGcI12LBQ" />
           <AcmeProjectActionInfo Action="File" Source="hal/src/hal_gpio.c" IsConfig="false" Hash="wIzN9zQd1b8qd+RDoSkD7Q" />
-          <AcmeProjectActionInfo Action="File" Source="hal/src/hal_i2c_m_sync.c" IsConfig="false" Hash="rXHlXpjvdMJ9o6yJQwR90g" />
           <AcmeProjectActionInfo Action="File" Source="hal/src/hal_init.c" IsConfig="false" Hash="bJvq8kpNbbOE2nZfChOGTQ" />
           <AcmeProjectActionInfo Action="File" Source="hal/src/hal_io.c" IsConfig="false" Hash="FYpavzYSxhFzVrBQtcH2ZA" />
           <AcmeProjectActionInfo Action="File" Source="hal/src/hal_rand_sync.c" IsConfig="false" Hash="mjHvimOpnXqAi1gcICu2gA" />
           <AcmeProjectActionInfo Action="File" Source="hal/src/hal_sleep.c" IsConfig="false" Hash="3ebghfB3jYLpnqoi3fhq3g" />
+          <AcmeProjectActionInfo Action="File" Source="hal/src/hal_wdt.c" IsConfig="false" Hash="DjTaO6vv+J4rQ6HxmL1nxA" />
           <AcmeProjectActionInfo Action="File" Source="hal/utils/include/compiler.h" IsConfig="false" Hash="8BnWsmkWteo58vaF6VHKHA" />
           <AcmeProjectActionInfo Action="File" Source="hal/utils/include/err_codes.h" IsConfig="false" Hash="csatJsZ0ym9p7PojjaFNeQ" />
           <AcmeProjectActionInfo Action="File" Source="hal/utils/include/events.h" IsConfig="false" Hash="hUr+KA59XIxyEvCEHvqMfQ" />
@@ -135,11 +136,11 @@
           <AcmeProjectActionInfo Action="File" Source="hri/hri_wdt_l11.h" IsConfig="false" Hash="3EhDsI+kcotceM6+wvXsLQ" />
           <AcmeProjectActionInfo Action="File" Source="trustzone/trustzone_manager.c" IsConfig="false" Hash="JCnvTMW4NAq1e8wSRxyFmw" />
           <AcmeProjectActionInfo Action="File" Source="main.c" IsConfig="false" Hash="oXPGNpDiy3+n2UOyVGe+VQ" />
-          <AcmeProjectActionInfo Action="File" Source="driver_init.c" IsConfig="false" Hash="fmUcpPvo0n+CMuArARex4A" />
-          <AcmeProjectActionInfo Action="File" Source="driver_init.h" IsConfig="false" Hash="EpzeN//jkG9YRBc21mC3ug" />
-          <AcmeProjectActionInfo Action="File" Source="atmel_start_pins.h" IsConfig="false" Hash="H2+/SMgI98ktYo4v4uSEcQ" />
-          <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.h" IsConfig="false" Hash="/wzZp7VCHm0wDLgnZzVWhQ" />
-          <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.c" IsConfig="false" Hash="Sa8OGyfLqiqjd/UChQZO+g" />
+          <AcmeProjectActionInfo Action="File" Source="driver_init.c" IsConfig="false" Hash="djMfb7mKauiMOW6OvONbtQ" />
+          <AcmeProjectActionInfo Action="File" Source="driver_init.h" IsConfig="false" Hash="/vfSA3tM1tyUyL+KqpC/5A" />
+          <AcmeProjectActionInfo Action="File" Source="atmel_start_pins.h" IsConfig="false" Hash="67ibG89oaWZEeJJgGHB8OA" />
+          <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.h" IsConfig="false" Hash="8njujh49nltxkgZrUqxoaQ" />
+          <AcmeProjectActionInfo Action="File" Source="examples/driver_examples.c" IsConfig="false" Hash="6DYEhkttaP/7rV/LzKuJlA" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_adc_async.h" IsConfig="false" Hash="kQUwcVcp1XAP9GQn0S34sw" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_timer.h" IsConfig="false" Hash="5pZVthtMl40VMvofOld2ng" />
           <AcmeProjectActionInfo Action="File" Source="hal/include/hal_usart_sync.h" IsConfig="false" Hash="ZzIGSRyjZuxRzFAtNNt7sw" />
@@ -184,6 +185,8 @@
           <AcmeProjectActionInfo Action="File" Source="hpl/tc/hpl_tc.c" IsConfig="false" Hash="d6GFzAKbX4TMAqRap+76mw" />
           <AcmeProjectActionInfo Action="File" Source="hpl/tc/hpl_tc_base.h" IsConfig="false" Hash="gjj5IyaZPy6sUReifzS1GQ" />
           <AcmeProjectActionInfo Action="File" Source="hpl/trng/hpl_trng.c" IsConfig="false" Hash="ozPpMlinY/ncU3MYQsLTow" />
+          <AcmeProjectActionInfo Action="File" Source="hpl/wdt/hpl_wdt.c" IsConfig="false" Hash="DeiT4ao0T8kHM9Uy3eNIeA" />
+          <AcmeProjectActionInfo Action="File" Source="hpl/wdt/hpl_wdt_base.h" IsConfig="false" Hash="cYf18KazRj6YPAIVDHemBQ" />
           <AcmeProjectActionInfo Action="File" Source="trustzone/trustzone_manager.h" IsConfig="false" Hash="G4r1omoy6Aq5/fn2L+UhUw" />
           <AcmeProjectActionInfo Action="File" Source="trustzone/trustzone_veneer.h" IsConfig="false" Hash="YnophpZJ+gfU17abFzwKMg" />
           <AcmeProjectActionInfo Action="File" Source="trustzone/trustzone_veneer.c" IsConfig="false" Hash="PN4Uw+eACD2rusPTi/s6Ig" />
@@ -198,10 +201,11 @@
           <AcmeProjectActionInfo Action="File" Source="config/hpl_osc32kctrl_config.h" IsConfig="true" Hash="e46hytaXlTQgbwheYtWXwQ" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_oscctrl_config.h" IsConfig="true" Hash="GOuiqy7vBjCPlyu09xMspw" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_port_config.h" IsConfig="true" Hash="RZW3kJE9DV2Pt1QsLR2RSQ" />
-          <AcmeProjectActionInfo Action="File" Source="config/hpl_sercom_config.h" IsConfig="true" Hash="B+geKqjgLIGzn2D6UeHquw" />
+          <AcmeProjectActionInfo Action="File" Source="config/hpl_sercom_config.h" IsConfig="true" Hash="xdeI6ZTpE97Q4iwOndbr+Q" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_tc_config.h" IsConfig="true" Hash="gtTPk5MZ1K1Hznh5kJ3LWg" />
           <AcmeProjectActionInfo Action="File" Source="config/hpl_trng_config.h" IsConfig="true" Hash="w2k+3QQFGr1vF7NGmKdLLQ" />
-          <AcmeProjectActionInfo Action="File" Source="config/peripheral_clk_config.h" IsConfig="true" Hash="JFpSa3noYAmd6TK5dGYjiw" />
+          <AcmeProjectActionInfo Action="File" Source="config/hpl_wdt_config.h" IsConfig="true" Hash="t5Z68OqOeo9Kr6F3uT2GTQ" />
+          <AcmeProjectActionInfo Action="File" Source="config/peripheral_clk_config.h" IsConfig="true" Hash="MnOMIzuTXUGXSPkZG8WKBw" />
           <AcmeProjectActionInfo Action="File" Source="config/trustzone_config.h" IsConfig="true" Hash="ebBlT4wpzkAICvvMDZ+EQw" />
         </AcmeActionInfos>
         <NonsecureFilesInfo />
@@ -245,6 +249,7 @@
       <Value>../hpl/sercom</Value>
       <Value>../hpl/tc</Value>
       <Value>../hpl/trng</Value>
+      <Value>../hpl/wdt</Value>
       <Value>../hri</Value>
       <Value>../trustzone</Value>
       <Value>%24(PackRepoDir)\Atmel\SAML11_DFP\1.0.109\include</Value>
@@ -291,6 +296,7 @@
       <Value>../hpl/sercom</Value>
       <Value>../hpl/tc</Value>
       <Value>../hpl/trng</Value>
+      <Value>../hpl/wdt</Value>
       <Value>../hri</Value>
       <Value>../trustzone</Value>
       <Value>%24(PackRepoDir)\Atmel\SAML11_DFP\1.0.109\include</Value>
@@ -320,6 +326,7 @@
       <Value>../hpl/sercom</Value>
       <Value>../hpl/tc</Value>
       <Value>../hpl/trng</Value>
+      <Value>../hpl/wdt</Value>
       <Value>../hri</Value>
       <Value>../trustzone</Value>
       <Value>%24(PackRepoDir)\Atmel\SAML11_DFP\1.0.109\include</Value>
@@ -365,6 +372,7 @@
       <Value>../hpl/sercom</Value>
       <Value>../hpl/tc</Value>
       <Value>../hpl/trng</Value>
+      <Value>../hpl/wdt</Value>
       <Value>../hri</Value>
       <Value>../trustzone</Value>
       <Value>%24(PackRepoDir)\Atmel\SAML11_DFP\1.0.109\include</Value>
@@ -412,6 +420,7 @@
       <Value>../hpl/sercom</Value>
       <Value>../hpl/tc</Value>
       <Value>../hpl/trng</Value>
+      <Value>../hpl/wdt</Value>
       <Value>../hri</Value>
       <Value>../trustzone</Value>
       <Value>%24(PackRepoDir)\Atmel\SAML11_DFP\1.0.109\include</Value>
@@ -442,6 +451,7 @@
       <Value>../hpl/sercom</Value>
       <Value>../hpl/tc</Value>
       <Value>../hpl/trng</Value>
+      <Value>../hpl/wdt</Value>
       <Value>../hri</Value>
       <Value>../trustzone</Value>
       <Value>%24(PackRepoDir)\Atmel\SAML11_DFP\1.0.109\include</Value>
@@ -452,6 +462,15 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ADF7024.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ADF7024.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ADF7024_Config.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="atmel_start.c">
       <SubType>compile</SubType>
     </Compile>
@@ -495,6 +514,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Config\hpl_trng_config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Config\hpl_wdt_config.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Config\peripheral_clk_config.h">
@@ -542,9 +564,6 @@
     <Compile Include="hal\include\hal_gpio.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="hal\include\hal_i2c_m_sync.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="hal\include\hal_init.h">
       <SubType>compile</SubType>
     </Compile>
@@ -564,6 +583,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hal\include\hal_usart_sync.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="hal\include\hal_wdt.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hal\include\hpl_adc_async.h">
@@ -665,6 +687,9 @@
     <Compile Include="hal\include\hpl_usart_sync.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="hal\include\hpl_wdt.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="hal\src\hal_adc_async.c">
       <SubType>compile</SubType>
     </Compile>
@@ -681,9 +706,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hal\src\hal_gpio.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="hal\src\hal_i2c_m_sync.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hal\src\hal_init.c">
@@ -705,6 +727,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hal\src\hal_usart_sync.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="hal\src\hal_wdt.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hal\utils\include\compiler.h">
@@ -779,7 +804,7 @@
     <Compile Include="hpl\eic\hpl_eic.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="hpl\gclk\evsys\hpl_evsys.c">
+    <Compile Include="hpl\evsys\hpl_evsys.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hpl\gclk\hpl_gclk.c">
@@ -822,6 +847,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hpl\trng\hpl_trng.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="hpl\wdt\hpl_wdt.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="hpl\wdt\hpl_wdt_base.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="hri\hri_ac_l11.h">
@@ -908,6 +939,12 @@
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="saml11.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="saml11.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="trustzone\trustzone_manager.c">
       <SubType>compile</SubType>
     </Compile>
@@ -938,8 +975,8 @@
     <Folder Include="hpl\crya\" />
     <Folder Include="hpl\dmac\" />
     <Folder Include="hpl\eic\" />
+    <Folder Include="hpl\evsys\" />
     <Folder Include="hpl\gclk\" />
-    <Folder Include="hpl\gclk\evsys\" />
     <Folder Include="hpl\mclk\" />
     <Folder Include="hpl\osc32kctrl\" />
     <Folder Include="hpl\oscctrl\" />
@@ -949,6 +986,7 @@
     <Folder Include="hpl\sercom\" />
     <Folder Include="hpl\tc\" />
     <Folder Include="hpl\trng\" />
+    <Folder Include="hpl\wdt\" />
     <Folder Include="hri\" />
     <Folder Include="trustzone\" />
   </ItemGroup>

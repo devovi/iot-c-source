@@ -42,9 +42,9 @@ static uint8_t ADC_0_map[ADC_0_CH_MAX + 1];
 
 struct rand_sync_desc RAND_0;
 
-struct i2c_m_sync_desc I2C_0;
-
 struct usart_sync_descriptor USART_0;
+
+struct wdt_descriptor WDT_0;
 
 /**
  * \brief ADC initialization function
@@ -147,6 +147,20 @@ void SPI_0_PORT_init(void)
 	gpio_set_pin_direction(SERCOM0_SPI_SCK, GPIO_DIRECTION_OUT);
 
 	gpio_set_pin_function(SERCOM0_SPI_SCK, PINMUX_PA15D_SERCOM0_PAD3);
+	
+	//doubt
+	// pin configuration for SS -->rohini
+	// Set pin direction to output
+	gpio_set_pin_direction(SERCOM0_SPI_SS, GPIO_DIRECTION_OUT);
+
+	gpio_set_pin_function(SERCOM0_SPI_SS, PINMUX_PA05D_SERCOM0_PAD1);
+
+	gpio_set_pin_level(SERCOM0_SPI_SS,
+	// <y> Initial level
+	// <id> pad_initial_level
+	// <false"> Low
+	// <true"> High
+	false);
 }
 
 void SPI_0_CLOCK_init(void)
@@ -168,31 +182,15 @@ void SPI_0_init(void)
 	SPI_0_PORT_init();
 }
 
-void I2C_0_PORT_init(void)
+void USART_0_PORT_init(void)
 {
 
-	gpio_set_pin_pull_mode(PA16,
-	                       // <y> Pull configuration
-	                       // <id> pad_pull_config
-	                       // <GPIO_PULL_OFF"> Off
-	                       // <GPIO_PULL_UP"> Pull-up
-	                       // <GPIO_PULL_DOWN"> Pull-down
-	                       GPIO_PULL_OFF);
+	gpio_set_pin_function(PA00, PINMUX_PA00D_SERCOM1_PAD0);
 
-	gpio_set_pin_function(PA16, PINMUX_PA16C_SERCOM1_PAD0);
-
-	gpio_set_pin_pull_mode(PA17,
-	                       // <y> Pull configuration
-	                       // <id> pad_pull_config
-	                       // <GPIO_PULL_OFF"> Off
-	                       // <GPIO_PULL_UP"> Pull-up
-	                       // <GPIO_PULL_DOWN"> Pull-down
-	                       GPIO_PULL_OFF);
-
-	gpio_set_pin_function(PA17, PINMUX_PA17C_SERCOM1_PAD1);
+	gpio_set_pin_function(PA01, PINMUX_PA01D_SERCOM1_PAD1);
 }
 
-void I2C_0_CLOCK_init(void)
+void USART_0_CLOCK_init(void)
 {
 #if (defined(__ARM_FEATURE_CMSE) && (__ARM_FEATURE_CMSE == 3U))
 	hri_gclk_write_PCHCTRL_reg(GCLK, SERCOM1_GCLK_ID_CORE, CONF_GCLK_SERCOM1_CORE_SRC | (1 << GCLK_PCHCTRL_CHEN_Pos));
@@ -204,38 +202,24 @@ void I2C_0_CLOCK_init(void)
 #endif
 }
 
-void I2C_0_init(void)
-{
-	I2C_0_CLOCK_init();
-	i2c_m_sync_init(&I2C_0, SERCOM1);
-	I2C_0_PORT_init();
-}
-
-void USART_0_PORT_init(void)
-{
-
-	gpio_set_pin_function(PA08, PINMUX_PA08D_SERCOM2_PAD0);
-
-	gpio_set_pin_function(PA09, PINMUX_PA09D_SERCOM2_PAD1);
-}
-
-void USART_0_CLOCK_init(void)
-{
-#if (defined(__ARM_FEATURE_CMSE) && (__ARM_FEATURE_CMSE == 3U))
-	hri_gclk_write_PCHCTRL_reg(GCLK, SERCOM2_GCLK_ID_CORE, CONF_GCLK_SERCOM2_CORE_SRC | (1 << GCLK_PCHCTRL_CHEN_Pos));
-	hri_gclk_write_PCHCTRL_reg(GCLK, SERCOM2_GCLK_ID_SLOW, CONF_GCLK_SERCOM2_SLOW_SRC | (1 << GCLK_PCHCTRL_CHEN_Pos));
-	hri_mclk_set_APBCMASK_SERCOM2_bit(MCLK);
-#else
-	nsc_periph_clock_init(SERCOM2_GCLK_ID_CORE, CONF_GCLK_SERCOM2_CORE_SRC);
-	nsc_periph_clock_init(SERCOM2_GCLK_ID_SLOW, CONF_GCLK_SERCOM2_SLOW_SRC);
-#endif
-}
-
 void USART_0_init(void)
 {
 	USART_0_CLOCK_init();
-	usart_sync_init(&USART_0, SERCOM2, (void *)NULL);
+	usart_sync_init(&USART_0, SERCOM1, (void *)NULL);
 	USART_0_PORT_init();
+}
+
+void WDT_0_CLOCK_init(void)
+{
+#if (defined(__ARM_FEATURE_CMSE) && (__ARM_FEATURE_CMSE == 3U))
+	hri_mclk_set_APBAMASK_WDT_bit(MCLK);
+#endif
+}
+
+void WDT_0_init(void)
+{
+	WDT_0_CLOCK_init();
+	wdt_init(&WDT_0, WDT);
 }
 
 void EVENT_SYSTEM_0_init(void)
@@ -303,9 +287,9 @@ void system_init(void)
 
 	SPI_0_init();
 
-	I2C_0_init();
-
 	USART_0_init();
+
+	WDT_0_init();
 
 	EVENT_SYSTEM_0_init();
 	EXTERNAL_IRQ_0_init();

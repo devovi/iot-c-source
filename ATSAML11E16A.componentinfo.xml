@@ -36,39 +36,6 @@
 					<SelectString></SelectString>
 					<SourcePath></SourcePath>
 				</d4p1:anyType>
-				<d4p1:anyType i:type="FileInfo">
-					<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\ARM\CMSIS\5.4.0\CMSIS\Core\Include\tz_context.h</AbsolutePath>
-					<Attribute></Attribute>
-					<Category>header</Category>
-					<Condition>ARMv8-M TZ Device</Condition>
-					<FileContentHash>HF9AqUBjd5tnTgO/b7ACWQ==</FileContentHash>
-					<FileVersion></FileVersion>
-					<Name>CMSIS/Core/Include/tz_context.h</Name>
-					<SelectString></SelectString>
-					<SourcePath></SourcePath>
-				</d4p1:anyType>
-				<d4p1:anyType i:type="FileInfo">
-					<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\ARM\CMSIS\5.4.0\CMSIS\Core\Template\ARMv8-M\main_s.c</AbsolutePath>
-					<Attribute>template</Attribute>
-					<Category>sourceC</Category>
-					<Condition>ARMv8-M TZ Device</Condition>
-					<FileContentHash>b6XMdHOAvD0mrrmcLCokdQ==</FileContentHash>
-					<FileVersion>1.1.0</FileVersion>
-					<Name>CMSIS/Core/Template/ARMv8-M/main_s.c</Name>
-					<SelectString>Secure mode 'main' module for ARMv8-M</SelectString>
-					<SourcePath></SourcePath>
-				</d4p1:anyType>
-				<d4p1:anyType i:type="FileInfo">
-					<AbsolutePath>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\ARM\CMSIS\5.4.0\CMSIS\Core\Template\ARMv8-M\tz_context.c</AbsolutePath>
-					<Attribute>template</Attribute>
-					<Category>sourceC</Category>
-					<Condition>ARMv8-M TZ Device</Condition>
-					<FileContentHash>gLPTSfuzk1kZLTjAd6MCLg==</FileContentHash>
-					<FileVersion>1.1.0</FileVersion>
-					<Name>CMSIS/Core/Template/ARMv8-M/tz_context.c</Name>
-					<SelectString>RTOS Context Management (TrustZone for ARMv8-M)</SelectString>
-					<SourcePath></SourcePath>
-				</d4p1:anyType>
 			</Files>
 			<PackName>CMSIS</PackName>
 			<PackPath>C:/Program Files (x86)/Atmel/Studio/7.0/Packs/ARM/CMSIS/5.4.0/ARM.CMSIS.pdsc</PackPath>
@@ -124,7 +91,7 @@
 					<Attribute>template</Attribute>
 					<Category>source</Category>
 					<Condition>C Exe</Condition>
-					<FileContentHash>o0ncidL5gR0Z0YwWJ1YroQ==</FileContentHash>
+					<FileContentHash>fmpNbbchnYIdvKiwbalNDQ==</FileContentHash>
 					<FileVersion></FileVersion>
 					<Name>templates/main.c</Name>
 					<SelectString>Main file (.c)</SelectString>

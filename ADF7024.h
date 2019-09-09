@@ -121,6 +121,8 @@ struct ADF7024_RDB
     unsigned char rxBaseAdr;									// 0x125
 	unsigned char maximum_packet_length_control_trx_byte_low;	// 0x014
 	unsigned char maximum_packet_length_control_trx_byte_high;	// 0x015
+	unsigned char addressMatchOffset;							// 0x129
+	unsigned char addressLength;								// 0x12A
 	unsigned char rxBuffersignal;								// 0x134
 	unsigned char rxBuffersize;									// 0x135
 	unsigned char txBuffersignal;								// 0x136

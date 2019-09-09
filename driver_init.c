@@ -175,11 +175,13 @@ void SPI_0_CLOCK_init(void)
 #endif
 }
 
-void SPI_0_init(void)
+int SPI_0_init(void)
 {
 	SPI_0_CLOCK_init();
 	spi_m_sync_init(&SPI_0, SERCOM0);
 	SPI_0_PORT_init();
+	
+	return 0;
 }
 
 void USART_0_PORT_init(void)
@@ -285,7 +287,7 @@ void system_init(void)
 	RTC_CLOCK_init();
 	RTC_init();
 
-	SPI_0_init();
+	//SPI_0_init();
 
 	USART_0_init();
 

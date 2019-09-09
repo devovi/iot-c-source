@@ -46,8 +46,8 @@ extern "C" {
 
 #define SPI_DEACTIVATE_NEXT 0x8000
 
-static int32_t _spi_m_sync_io_write(struct io_descriptor *const io, const uint8_t *const buf, const uint16_t length);
-static int32_t _spi_m_sync_io_read(struct io_descriptor *const io, uint8_t *const buf, const uint16_t length);
+//static int32_t _spi_m_sync_io_write(struct io_descriptor *const io, const uint8_t *const buf, const uint16_t length);
+//static int32_t _spi_m_sync_io_read(struct io_descriptor *const io, uint8_t *const buf, const uint16_t length);
 
 /**
  *  \brief Initialize the SPI HAL instance function pointer for HPL APIs.
@@ -130,7 +130,8 @@ int32_t spi_m_sync_set_data_order(struct spi_m_sync_descriptor *spi, const enum 
  *  \retval size Success.
  *  \retval >=0 Time out, with number of characters read.
  */
-static int32_t _spi_m_sync_io_read(struct io_descriptor *io, uint8_t *buf, const uint16_t length)
+//static int32_t _spi_m_sync_io_read(struct io_descriptor *io, uint8_t *buf, const uint16_t length)
+int32_t _spi_m_sync_io_read(struct io_descriptor *io, uint8_t *buf, const uint16_t length)
 {
 	ASSERT(io);
 
@@ -158,7 +159,8 @@ static int32_t _spi_m_sync_io_read(struct io_descriptor *io, uint8_t *buf, const
  *  \retval size Success.
  *  \retval >=0 Timeout, with number of characters transferred.
  */
-static int32_t _spi_m_sync_io_write(struct io_descriptor *const io, const uint8_t *const buf, const uint16_t length)
+//static int32_t _spi_m_sync_io_write(struct io_descriptor *const io, const uint8_t *const buf, const uint16_t length)
+int32_t _spi_m_sync_io_write(struct io_descriptor *const io, const uint8_t *const buf, const uint16_t length)
 {
 	ASSERT(io);
 

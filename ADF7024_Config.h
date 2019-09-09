@@ -54,6 +54,10 @@ struct ADF7024_RDB ADF7024_RDBDefault =
 	MAX_ROLLING_BUFFER_LEN_TRX_BYTE_LOW,
 	/* Maximum Packet Length Control for high byte -0x015 */
 	MAX_ROLLING_BUFFER_LEN_TRX_BYTE_HIGH,
+	 /* addressMatchOffset - 0x129 */
+	 0x01,
+	 /* addressLength - 0x12A */
+	 0x02,
 	/* rxBuffersignal - 0x134 */
 	BB_RX_BUFFER_SIGNAL,
 	/* rxBuffersize - 0x135 */
@@ -64,4 +68,4 @@ struct ADF7024_RDB ADF7024_RDBDefault =
 	BB_TX_BUFFER_SIZE,
 	/* testmodes - 0x139 */
 	PKT_TESTMODES
-}
+};

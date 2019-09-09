@@ -8,7 +8,7 @@
 #include "ADF7024.h"
 #include "ADF7024_Config.h"
 #include "driver_init.h"
-//#include "hal_spi_m_sync.h"
+#include "hal_spi_m_sync.h"
 
 /******************************************************************************/
 /*************************** Macros Definitions *******************************/
@@ -227,7 +227,7 @@ void ADF7024_TransmitPacket(unsigned char* packet, unsigned char length)
 	
 	header[0] = 2 + length;
 	//doubt to configure addressMatchOffset
-	//header[1] = ADF7024_RDBCurrent.addressMatchOffset; //need to be update
+	header[1] = ADF7024_RDBCurrent.addressMatchOffset; //need to be update
 	ADF7024_SetRAM(0x10, 2, header);
 	ADF7024_SetRAM(0x12, length, packet);
 	ADF7024_SetFwState(FW_STATE_PHY_ON);

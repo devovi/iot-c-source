@@ -37,16 +37,21 @@ static void SPI_DGI_Init(void)
 }
 
 /* saml11 init Function: STATE MACHINE IMPLEMENTATION */
-int ATSAML11E16A_init(void)
+int ATSAML11E16A_init()
 {
+	int status = 0;
 	/* Initializes MCU, drivers and middle ware */
 	atmel_start_init();
+	
+	/* Initialize the SPI connection for saml11 */
+	status = SPI_0_init();
 	
 	/* Enable IRQ on the PA27 */
 	EXTERNAL_IRQ_0_enable();
 
 	/* Initialize the SPI connection for DGI usage */
 	SPI_DGI_Init();
-
 	
+	 return status;
+
 } // end of main

@@ -54,6 +54,9 @@ extern "C" {
  * \name HPL functions
  */
 //@{
+	
+int32_t _spi_m_sync_io_write(struct io_descriptor *const io, const uint8_t *const buf, const uint16_t length);
+int32_t _spi_m_sync_io_read(struct io_descriptor *const io, uint8_t *const buf, const uint16_t length);	
 /**
  *  \brief Initialize SPI for access without interrupts
  *  It will load default hardware configuration and software struct.

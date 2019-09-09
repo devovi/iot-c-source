@@ -59,7 +59,8 @@ int8_t RTC_init(void);
 
 void SPI_0_PORT_init(void);
 void SPI_0_CLOCK_init(void);
-void SPI_0_init(void);
+//void SPI_0_init(void);
+int SPI_0_init(void);
 
 void USART_0_PORT_init(void);
 void USART_0_CLOCK_init(void);

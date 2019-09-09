@@ -10,7 +10,7 @@
 #define SAML11_H_
 
 
-int ATSAML11E16A_init(void);
+int ATSAML11E16A_init();
 
 
 #endif /* SAML11_H_ */
